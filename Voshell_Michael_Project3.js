@@ -14,7 +14,11 @@ var enjoys = ["Sleeping",
                "Eating",
                "Playing"];
 
-           
+var dogAges = [8,
+               8,
+               6,
+               3
+               ];           
 // Functions and Procedures
 
 
