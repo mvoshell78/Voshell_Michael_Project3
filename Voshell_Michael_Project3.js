@@ -126,6 +126,9 @@ dogInfo(json);
 myDogs(dogNames, enjoys)
 
 
+var string = didNotHave(dogNames)
+    say (string)
+    
 
 var isitTrue = howMany(dogAges) 
     if (isitTrue === true ) {
@@ -143,12 +146,14 @@ var isitTrue = howMany(dogAges)
         say (" We used to only have Three");
         };//else
 
+say ("Before we got " + dogNames[3] + ", " + dogNames[2] + " ran away" );
+
+dogAges.push(3)
 
 goneSoLong()
 
 
-var string = didNotHave(dogNames)
-    say (string)
+
 
 
 var ages = combinedAges(dogAges)
