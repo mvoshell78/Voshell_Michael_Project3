@@ -106,12 +106,18 @@ var howMany = function(dogAges) {
     };
 
 
-var goneSoLong = function()
-    i = 0
-    while (i < 8 )
-    say (we )
-
-
+var goneSoLong = function() {
+    var i = 1
+    while (i <= 8 ) {
+            if (i > 1 ) {
+            say (" We have been looking for Fiona for " + i + " months ")
+            i++;
+            } else {
+            say (" We have been looking for Fiona for " + i + " month ")
+            i++;
+    }; // end of conditional
+}; // while loop
+}; //EOP
 
 // Main Code
 
@@ -138,7 +144,7 @@ var isitTrue = howMany(dogAges)
         };//else
 
 
-
+goneSoLong()
 
 
 var string = didNotHave(dogNames)
