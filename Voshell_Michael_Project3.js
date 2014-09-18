@@ -110,10 +110,10 @@ var goneSoLong = function() {
     var i = 1
     while (i <= 8 ) {
             if (i > 1 ) {
-            say (" We have been looking for Fiona for " + i + " months ")
+            say (" We were looking for Fiona for " + i + " months ")
             i++;
             } else {
-            say (" We have been looking for Fiona for " + i + " month ")
+            say (" We were looking for Fiona for " + i + " month ")
             i++;
     }; // end of conditional
 }; // while loop
@@ -152,6 +152,8 @@ dogAges.push(3)
 
 goneSoLong()
 
+say("While she was gone, We got " + dogNames[3] + "." )
+say(" He came from someone we had sold him to when we bread Boxers.")
 
 
 
