@@ -19,16 +19,51 @@ var dogAges = [8,
                6,
                3
                ];           
+
+var json = {
+       "dogs" : [
+         {
+                  "name"   : "Sam",
+                  "age"    : 8,
+                  "breed"  : " Boxer"      
+         },
+         {
+                  "name"   : "Pedro",
+                  "age"    : 8,
+                  "breed"  : " Shitszu" 
+         },
+         {
+                  "name"   : "Fiona",
+                  "age"    : 6,
+                  "breed"  : " Boxer" 
+         },
+         {
+                  "name"   : "Tyson",
+                  "age"    : 3,
+                  "breed"  : " Boxer" 
+         }
+       ]
+       
+};
+
 // Functions and Procedures
 
 
 
 var say = function(message) {console.log(message); };// simplified console.log
 
+var dogInfo = function(json) {
+    say("I have four dogs, ")
+    for (var i = 0; i < json.dogs.length; i++) { 
+    var dogs = json.dogs[i];
+    say(dogs.name + " who is " + dogs.age + " years old, and is a " + dogs.breed )
+    }; // for loop
+    }; // EOP
+    
+    
 var myDogs = function(dogNames, enjoys) {
          for ( var dogs = 0; dogs < dogNames.length; dogs++) {
             for (var i = 0; i < enjoys.length; i++) {
-            say("I have " + dogNames.length + " dogs, one named " + dogNames[dogs] )
                 if (dogNames[dogs] === "Fiona") {
                     say (dogNames[dogs] + " enjoys " + enjoys[i] + ", because she's a dog and doesn't have anything better to do"   )
                 } else {
@@ -71,23 +106,39 @@ var howMany = function(dogAges) {
     };
 
 
-
+var goneSoLong = function()
+    i = 0
+    while (i < 8 )
+    say (we )
 
 
 
 // Main Code
 
+dogInfo(json);
 
 myDogs(dogNames, enjoys)
 
 
 
-var isitTrue = howMany(dogAges)
+var isitTrue = howMany(dogAges) 
     if (isitTrue === true ) {
-        say (" Four is alot ")
+        say (" We didn't always have all four ")
     } else {
-        say (" Why did you lie to me ?")
-        };
+        say (" We used to only have Three");
+        };//else
+
+dogAges.pop();
+
+var isitTrue = howMany(dogAges) 
+    if (isitTrue === true ) {
+        say (" We didn't always have all four ")
+    } else {
+        say (" We used to only have Three");
+        };//else
+
+
+
 
 
 var string = didNotHave(dogNames)
